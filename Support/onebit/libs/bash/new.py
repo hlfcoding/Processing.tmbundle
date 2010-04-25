@@ -4,7 +4,7 @@ import commands
 import tempfile
 
 def main(*args):
-    location = args[1]
+    location = args[1].rstrip()
     sketch_name = args[2]
 
     folderpath = "%s/%s" % (location, sketch_name)
